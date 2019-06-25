@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:orientation="vertical"
+                                   app:cardCornerRadius="17dip"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:layout_margin="8dip"
+                  android:orientation="vertical"
+                  android:layout_gravity="center_horizontal">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="You're almost done" android:textSize="28sp" android:id="@+id/title"
+                  android:paddingTop="28dip" android:paddingEnd="24dip" android:paddingStart="24dip"
+                  android:textColor="#000000" android:layout_gravity="center_horizontal"
+                  android:gravity="center_horizontal" android:fontFamily="@font/montserrat_extrabold"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:paddingEnd="30dip"
+                   android:layout_marginTop="-20px"
+                   android:paddingStart="30dip"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/hello"/>
+
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="Please select your account type" android:gravity="center_horizontal"
+                  android:layout_marginTop="-35dip" android:id="@+id/getstarted"
+                  android:fontFamily="@font/montserrat_regular"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1"
+                      android:orientation="horizontal" android:layout_margin="7dip">
+            <LinearLayout android:layout_width="0dip" android:layout_height="wrap_content"
+                          android:layout_weight="0.1"></LinearLayout>
+            <LinearLayout android:layout_width="0dip" android:layout_height="wrap_content" android:layout_weight="0.4">
+                <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Doctor"
+                        android:background="@drawable/button_left_dialog" android:layout_marginBottom="7dip"
+                        android:id="@+id/doctor"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dip" android:layout_height="wrap_content" android:layout_weight="0.4">
+                <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Patient"
+                        android:background="@drawable/button_right_dialog" android:layout_marginBottom="7dip"
+                        android:id="@+id/patient"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dip" android:layout_height="wrap_content"
+                          android:layout_weight="0.1"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

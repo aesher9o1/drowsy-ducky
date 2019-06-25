@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <LinearLayout
+            android:paddingTop="21dip"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Howdy Buddy"
+                android:id="@+id/company_name"
+                android:textSize="31sp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:textColor="#000000"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Your Chaddi, My Haddi"
+                  android:fontFamily="@font/montserrat_bold"
+                  android:id="@+id/company_moto"
+                  android:textSize="15sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_margin="20dip"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/login_logo"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+        <Button android:layout_width="match_parent"
+                android:layout_marginStart="50dip"
+                android:layout_marginEnd="50dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_round"
+                android:text="GET STARTED"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/montserrat_bold"
+                android:id="@+id/login"
+                android:elevation="24dip"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="APP PREREQUISITE"
+                  android:fontFamily="@font/montserrat_extrabold"
+                  android:id="@+id/pre"
+                  android:textSize="15sp"
+                  android:layout_marginTop="25dip"/>
+    </LinearLayout>
+</LinearLayout>
