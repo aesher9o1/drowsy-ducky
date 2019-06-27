@@ -1,14 +1,264 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:padding="7dip"
+              android:padding="14dip"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:textSize="17sp"
-              android:text="Setting"/>
+              android:textSize="21sp"
+              android:textColor="#000000"
+              android:id="@+id/heading"
+              android:layout_alignParentTop="true"
+              android:fontFamily="@font/montserrat_bold"
+              android:text="Profile Setup"/>
 
 
-</LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_below="@id/heading"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="17dip"
+                  android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="13sp"
+                      android:layout_marginLeft="4dip"
+                      android:text="Name"
+                      android:fontFamily="@font/montserrat_bold"/>
+
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/edittext_background"
+                      android:padding="8dip"
+                      android:id="@+id/name"
+                      android:layout_marginTop="2dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="13sp"
+                      android:layout_marginLeft="4dip"
+                      android:text="Phone Number"
+                      android:fontFamily="@font/montserrat_bold"/>
+
+            <EditText android:layout_width="match_parent"
+                      android:inputType="phone"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/edittext_background"
+                      android:padding="8dip"
+                      android:id="@+id/phone"
+                      android:layout_marginTop="2dip"/>
+
+        </LinearLayout>
+
+
+        <!-- Doctor start-->
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:id="@+id/doctor"
+                      android:visibility="gone">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginTop="7dip"
+                     >
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="13sp"
+                      android:layout_marginLeft="4dip"
+                      android:text="About you"
+                      android:fontFamily="@font/montserrat_bold"/>
+
+
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:maxLength="2000"
+                      android:lines="8"
+                      android:maxLines="8"
+                      android:id="@+id/about"
+                      android:background="@drawable/edittext_background"
+                      android:padding="8dip"
+                      android:layout_marginTop="2dip"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginTop="7dip">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="13sp"
+                      android:layout_marginLeft="4dip"
+                      android:text="Address"
+                      android:fontFamily="@font/montserrat_bold"/>
+
+
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/edittext_background"
+                      android:padding="8dip"
+                      android:lines="4"
+                      android:id="@+id/address"
+                      android:maxLines="4"
+                      android:layout_marginTop="2dip"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginTop="7dip">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="13sp"
+                      android:layout_marginLeft="4dip"
+                      android:text="Experience"
+                      android:fontFamily="@font/montserrat_bold"/>
+
+            <Spinner android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/experience"
+                     android:background="@drawable/edittext_background"
+                     android:padding="8dip"
+                     android:layout_marginTop="2dip"/>
+        </LinearLayout>
+        </LinearLayout>
+
+    <!-- Doctor end-->
+
+
+
+
+
+
+    <!-- Patient start-->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="7dip"
+                  android:id="@+id/patient"
+                  android:visibility="gone">
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="13sp"
+                  android:layout_marginLeft="4dip"
+                  android:text="Medical breif and active medications"
+                  android:fontFamily="@font/montserrat_bold"/>
+
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLength="2000"
+                  android:lines="8"
+                  android:maxLines="8"
+                  android:id="@+id/medication"
+                  android:background="@drawable/edittext_background"
+                  android:padding="8dip"
+                  android:layout_marginTop="2dip"/>
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginTop="7dip">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="13sp"
+                      android:layout_marginLeft="4dip"
+                      android:text="Please select the disease you suffered from in past"
+                      android:fontFamily="@font/montserrat_bold"/>
+
+            <Spinner android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/disease1"
+                     android:background="@drawable/edittext_background"
+                     android:padding="8dip"
+                     android:layout_marginTop="2dip"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginTop="7dip">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="13sp"
+                      android:layout_marginLeft="4dip"
+                      android:text="Please select the disease you suffered from in past"
+                      android:fontFamily="@font/montserrat_bold"/>
+
+            <Spinner android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/disease2"
+                     android:background="@drawable/edittext_background"
+                     android:padding="8dip"
+                     android:layout_marginTop="2dip"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginTop="7dip">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="13sp"
+                      android:layout_marginLeft="4dip"
+                      android:text="Please select the disease you suffered from in past"
+                      android:fontFamily="@font/montserrat_bold"/>
+
+            <Spinner android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/disease3"
+                     android:background="@drawable/edittext_background"
+                     android:padding="8dip"
+                     android:layout_marginTop="2dip"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <!-- Patient end-->
+
+
+    <Button android:layout_width="match_parent"
+            android:layout_marginStart="50dip"
+            android:layout_marginEnd="50dip"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/montserrat_bold"
+            android:id="@+id/submit"
+            android:elevation="24dip"/>
+
+
+</RelativeLayout>

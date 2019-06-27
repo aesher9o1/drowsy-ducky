@@ -88,8 +88,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun replaceFragment(mode: String) {
-        val ft: FragmentTransaction = supportFragmentManager.beginTransaction()
-        ft.setCustomAnimations(R.anim.fadein, R.anim.fadeout).replace(R.id.container, Dashboard(), "Dashboard")
+
 
         val bundle = Bundle()
         val setting = Setting()
@@ -99,21 +98,29 @@ class MainActivity : AppCompatActivity() {
                 bundle.putString("type", "Patient")
                 setting.arguments = bundle
 
-                ft.setCustomAnimations(R.anim.fadein, R.anim.fadeout).replace(R.id.container, setting, "Dashboard")
+                val ft: FragmentTransaction = supportFragmentManager.beginTransaction()
+                ft.setCustomAnimations(R.anim.fadein, R.anim.fadeout).replace(R.id.container, setting, "Patient")
+                ft.commit()
             }
             "DOCTOR" -> {
-                bundle.putString("type", "Patient")
+                bundle.putString("type", "Doctor")
                 setting.arguments = bundle
 
-                ft.setCustomAnimations(R.anim.fadein, R.anim.fadeout).replace(R.id.container, Setting(), "Dashboard")
+                val ft: FragmentTransaction = supportFragmentManager.beginTransaction()
+                ft.setCustomAnimations(R.anim.fadein, R.anim.fadeout).replace(R.id.container, setting, "Doctor")
+                ft.commit()
             }
-            else -> ft.setCustomAnimations(R.anim.fadein, R.anim.fadeout).replace(
-                R.id.container,
-                Dashboard(),
-                "Dashboard"
-            )
+            else -> {
+                val ft: FragmentTransaction = supportFragmentManager.beginTransaction()
+                ft.setCustomAnimations(R.anim.fadein, R.anim.fadeout).replace(
+                    R.id.container,
+                    Dashboard(),
+                    "Dashboard"
+                )
+                ft.commit()
+            }
         }
 
-        ft.commit()
+
     }
 }

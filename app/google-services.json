@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "450788381461",
+    "firebase_url": "https://howdybuddy-52320.firebaseio.com",
+    "project_id": "howdybuddy-52320",
+    "storage_bucket": "howdybuddy-52320.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450788381461:android:e937f36caeb64103",
+        "android_client_info": {
+          "package_name": "com.howdy.buddy.vr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450788381461-bi6239370gtu7kqbd1vu8dcb31okdp97.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.howdy.buddy.vr",
+            "certificate_hash": "b92ed8c101b97c89f27eb39d698f4b99d1c42515"
+          }
+        },
+        {
+          "client_id": "450788381461-2hhbckve5h6913evbfs0797m4b6eoj6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgEWNcbH64gZ75kN3nrRQ6hvcBIA3jEOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450788381461-2hhbckve5h6913evbfs0797m4b6eoj6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
